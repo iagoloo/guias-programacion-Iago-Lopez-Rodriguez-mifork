@@ -80,7 +80,7 @@ La sobrecarga resulta especialmente útil para simplificar operaciones que conce
 
 
 ## 8. Ejemplo mínimo de clase en Java, que se llame Punto, con dos atributos, x e y, con un método que se llame `calculaDistanciaAOrigen`, que calcule la distancia a la posición 0,0. Por sencillez, los atributos deben tener visibilidad por defecto. Crea además un ejemplo de uso con una instancia y uso del método
-
+```java
 // Archivo: Punto.java
 class Punto {
     double x; // visibilidad por defecto (package-private)
@@ -101,6 +101,7 @@ public class Main {
         System.out.println("Distancia al origen: " + d); // Imprime: 5.0
     }
 }
+```
 
 ## 9. ¿Cuál es el punto de entrada en un programa en Java? ¿Qué es `static` y para qué vale? ¿Sólo se emplea para ese método `main`? ¿Para qué se combina con `final`?
 
@@ -181,7 +182,7 @@ class Punto {
 
 
 ## 13. Añade ahora otro nuevo método que se llame `distanciaA`, que reciba un `Punto` como parámetro y calcule la distancia entre `this` y el punto proporcionado
-
+```java
 class Punto {
     double x; // visibilidad por defecto (package-private)
     double y; // visibilidad por defecto (package-private)
@@ -212,6 +213,7 @@ class Main {
         System.out.println("Distancia entre a y b: " + d);
     }
 }
+```
 
 ## 14. El paso del `Punto` como parámetro a un método, es **por copia** o **por referencia**, es decir, si se cambia el valor de algún atributo del punto pasado como parámetro, dichos cambios afectan al objeto fuera del método? ¿Qué ocurre si en vez de un `Punto`, se recibiese un entero (`int`) y dicho entero se modificase dentro de la función? 
 
